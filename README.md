@@ -163,27 +163,9 @@ Este proyecto fue desarrollado por:
 
 ### Sebastián Rodriguez
 
-**Rol**: Desarrollador Principal - Codificación
-
-- Responsable de la implementación de la lógica de negocio
-- Desarrollo de componentes funcionales
-- Integración de Context API y sistema de autenticación
-- Implementación de la navegación con Expo Router
-- Estructura del proyecto y arquitectura de código
-
 ### Benjamín Sanchez
 
-**Rol**: Diseño y Calidad - Estética y Testing
-
-- Encargado del diseño de la interfaz de usuario
-- Implementación de estilos y temas
-
 ### Hector Sanchez
-
-**Rol**: Testing
-
-- Testing de la aplicacion en varios dispositivos
-- Revision de la logica
 
 ---
 
