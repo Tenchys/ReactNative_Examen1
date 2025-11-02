@@ -40,7 +40,7 @@ Esta es una aplicación móvil desarrollada con **React Native** y **Expo Router
 
 ## Video DEMO
 
-[text](https://youtu.be/NE7K5cfGsXE)
+[VIDEO DEMO](https://youtu.be/NE7K5cfGsXE)
 
 ## Estructura del Proyecto
 
