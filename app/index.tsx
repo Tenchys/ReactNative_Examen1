@@ -4,6 +4,7 @@ import { useAppContext } from "@/hooks/globalContext";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import { Button, View } from "react-native";
+import styles from "../styles/indexStyles";
 
 export default function Index() {
   const [usuario, setUsuario] = useState("");
@@ -19,28 +20,35 @@ export default function Index() {
   return (
     <View
       style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        ...styles.container,
       }}
     >
-      <Parrafo contenido="Por favor, inicia sesión" />
-      <EntradaTexto
-        placeholder="Email"
-        keyboardType="email-address"
-        key={"user"}
-        onChangeText={setUsuario}
-        value={usuario}
-      />
-      <EntradaTexto
-        placeholder="password"
-        keyboardType="email-address"
-        secureTextEntry
-        key={"password"}
-        value={password}
-        onChangeText={setPassword}
-      />
-      <Button title="entrar" onPress={validateLogin} />
+      <View style={{ ...styles.box }}>
+        <View style={{ ...styles.boxTitulo }}>
+          <Parrafo contenido="🔐 Iniciar Sesión" />
+        </View>
+        <EntradaTexto
+          placeholder="Correo Electrónico"
+          keyboardType="email-address"
+          key={"user"}
+          onChangeText={setUsuario}
+          value={usuario}
+        />
+        <EntradaTexto
+          placeholder="Contraseña"
+          keyboardType="email-address"
+          secureTextEntry
+          key={"password"}
+          value={password}
+          onChangeText={setPassword}
+        />
+        <View style={{ ...styles.btnBox }}>
+          <Button title="ENTRAR" onPress={validateLogin} />
+        </View>
+        <View style={{ ...styles.boxTitulo }}>
+          <Parrafo contenido="Contraseña: 1234" />
+        </View>
+      </View>
     </View>
   );
 }

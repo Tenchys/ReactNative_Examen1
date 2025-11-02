@@ -7,25 +7,29 @@ Esta es una aplicación móvil desarrollada con **React Native** y **Expo Router
 ## Características Principales
 
 ### Sistema de Autenticación
+
 - Pantalla de login con validación de credenciales
 - Contraseña predeterminada: `1234`
 - Manejo de estado global mediante Context API
 - Navegación protegida según estado de autenticación
 
 ### Interfaz de Usuario
+
 - **Pantalla de Login**: Formulario con campos de email y contraseña
 - **Pantalla Home**: Bienvenida con imagen decorativa (vaquita)
 - **Pantalla de Perfil**: Muestra el nombre de usuario y permite cerrar sesión
 - **Navegación por Tabs**: Dos pestañas principales (Home y Perfil) con íconos personalizados
 - **Tema Oscuro**: Implementación del modo oscuro de React Navigation
 
-###  Componentes Reutilizables
+### Componentes Reutilizables
+
 - `EntradaTexto`: Input personalizado con soporte para diferentes tipos de teclado
 - `Titulo`: Componente de texto estilizado para títulos
 - `Parrafo`: Componente para textos de párrafo
 - Íconos personalizados para la navegación
 
 ### 🔧 Tecnologías Utilizadas
+
 - **React Native** (v0.81.5)
 - **Expo** (~54.0.20)
 - **Expo Router** (~6.0.13): Sistema de navegación basado en archivos
@@ -33,6 +37,10 @@ Esta es una aplicación móvil desarrollada con **React Native** y **Expo Router
 - **TypeScript** (~5.9.2): Tipado estático
 - **React Context API**: Manejo de estado global
 - **React Hooks**: useState, useContext, useRouter
+
+## Video DEMO
+
+[text](https://youtu.be/NE7K5cfGsXE)
 
 ## Estructura del Proyecto
 
@@ -67,12 +75,14 @@ ReactNative_Examen1-main/
 ## Flujo de la Aplicación
 
 1. **Pantalla de Login** (`app/index.tsx`):
+
    - El usuario ingresa su email y contraseña
    - Se valida que la contraseña sea "1234"
    - Si es correcta, se guarda el usuario en el contexto global y se navega a la zona autenticada
    - Si es incorrecta, se muestra una alerta
 
 2. **Zona Autenticada** (`app/appLogin/`):
+
    - **Tab Home**: Muestra un mensaje de bienvenida con una imagen
    - **Tab Perfil**: Muestra el nombre del usuario y un botón para cerrar sesión
 
@@ -83,6 +93,7 @@ ReactNative_Examen1-main/
 ## Instalación y Ejecución
 
 ### Prerrequisitos
+
 - Node.js (versión 14 o superior)
 - npm o yarn
 - Expo CLI
@@ -91,17 +102,20 @@ ReactNative_Examen1-main/
 ### Pasos de Instalación
 
 1. Clonar el repositorio:
+
 ```bash
 git clone <url-del-repositorio>
 cd ReactNative_Examen1-main
 ```
 
 2. Instalar dependencias:
+
 ```bash
 npm install
 ```
 
 3. Iniciar el proyecto:
+
 ```bash
 npm start
 ```
@@ -124,39 +138,52 @@ Para probar la aplicación, utiliza las siguientes credenciales:
 ## Características Técnicas Destacadas
 
 ### Context API para Estado Global
+
 La aplicación utiliza React Context para mantener el estado del usuario a través de toda la aplicación, implementado en `hooks/globalContext.tsx`.
 
 ### Expo Router
+
 Sistema de navegación basado en la estructura de archivos, similar a Next.js, que simplifica el enrutamiento y la navegación.
 
 ### TypeScript
+
 Todo el código está escrito en TypeScript, proporcionando tipado estático y mejor experiencia de desarrollo.
 
 ### Safe Area Context
+
 Manejo apropiado de las áreas seguras en dispositivos modernos (notch, barras de estado, etc.).
 
 ### Temas
+
 Soporte para modo oscuro utilizando React Navigation themes.
 
 ## Autores
 
 Este proyecto fue desarrollado por:
 
-###  Sebastián
+### Sebastián Rodriguez
+
 **Rol**: Desarrollador Principal - Codificación
+
 - Responsable de la implementación de la lógica de negocio
 - Desarrollo de componentes funcionales
 - Integración de Context API y sistema de autenticación
 - Implementación de la navegación con Expo Router
 - Estructura del proyecto y arquitectura de código
 
-###  Benjamín
+### Benjamín Sanchez
+
 **Rol**: Diseño y Calidad - Estética y Testing
+
 - Encargado del diseño de la interfaz de usuario
 - Implementación de estilos y temas
-- Pruebas de la aplicación en diferentes dispositivos
-- Validación de la experiencia de usuario
-- Control de calidad y testing funcional
+
+### Hector Sanchez
+
+**Rol**: Testing
+
+- Testing de la aplicacion en varios dispositivos
+- Revision de la logica
 
 ---
 
@@ -177,5 +204,3 @@ Este proyecto fue desarrollado por:
 Este proyecto es un ejercicio académico desarrollado para fines educativos.
 
 ---
-
-
