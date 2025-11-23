@@ -1,7 +1,7 @@
 import { DarkTheme, ThemeProvider } from "@react-navigation/native";
 import { Tabs } from "expo-router";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { HomeIcon, LoginIcon } from "../../components/ui/icons";
+import { HomeIcon, LoginIcon, ToDoListIcon } from "../../components/ui/icons";
 
 export default function RootLayout() {
   return (
@@ -22,6 +22,16 @@ export default function RootLayout() {
               title: "Perfil",
               tabBarLabel: "perfil",
               tabBarIcon: ({ color }) => <LoginIcon color={color} size={24} />,
+            }}
+          />
+          <Tabs.Screen
+            name="todolist"
+            options={{
+              title: "To Do List",
+              tabBarLabel: "To Do",
+              tabBarIcon: ({ color }) => (
+                <ToDoListIcon color={color} size={24} />
+              ),
             }}
           />
         </Tabs>
