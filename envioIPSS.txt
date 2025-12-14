@@ -1,0 +1,3 @@
+Nombre: Sebastian Rodriguez Lizama
+Repositorio: https://github.com/Tenchys/ReactNative_Examen1
+Fecha: 23/11/2025
