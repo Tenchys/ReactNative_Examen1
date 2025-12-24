@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid/non-secure";
 const utils = {
   isBlob: (file: any): file is Blob => {
     return file instanceof Blob;
